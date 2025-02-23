@@ -1,0 +1,11 @@
+git clone https://github.com/wandb/openui
+cd openui/backend
+uv sync --frozen --extra litellm
+source .venv/bin/activate
+# Set API keys for any LLM's you want to use
+export OPENAI_API_KEY=xxx
+
+.venv\Scripts\activate
+
+
+python -m openui
